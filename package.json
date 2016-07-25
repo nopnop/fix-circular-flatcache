@@ -1,0 +1,18 @@
+{
+  "name": "fix-circular-flatcache",
+  "version": "1.0.0",
+  "description": "Use case persistify + circular json",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "persistify ./index.js --cache-dir ./cache -o bundle.js",
+    "bundle-watch": "persistify ./index.js --cache-dir ./cache --watch -o bundle.js"
+  },
+  "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "circular-json": "^0.3.0",
+    "persistify": "^1.0.0",
+    "through2": "^2.0.1"
+  }
+}
